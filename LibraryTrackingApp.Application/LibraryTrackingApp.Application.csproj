@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryTrackingApp.Core\LibraryTrackingApp.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CQRS\Commands\PublisherCommands\Request\" />
+    <Folder Include="CQRS\Commands\PublisherCommands\Response\" />
+    <Folder Include="CQRS\Commands\BookEditionCommands\Request\" />
+    <Folder Include="CQRS\Commands\BookEditionCommands\Response\" />
+    <Folder Include="CQRS\Commands\BookFormatCommands\Request\" />
+    <Folder Include="CQRS\Commands\BookFormatCommands\Response\" />
+    <Folder Include="CQRS\Commands\BookCopyCommands\Request\" />
+    <Folder Include="CQRS\Commands\BookCopyCommands\Response\" />
+    <Folder Include="CQRS\Commands\LateReturnCommands\Request\" />
+    <Folder Include="CQRS\Commands\LateReturnCommands\Response\" />
+    <Folder Include="CQRS\Commands\ReservationStatusCommands\Request\" />
+    <Folder Include="CQRS\Commands\ReservationStatusCommands\Response\" />
+    <Folder Include="CQRS\Commands\ReservationCommands\Request\" />
+    <Folder Include="CQRS\Commands\ReservationCommands\Response\" />
+    <Folder Include="CQRS\Commands\UserCommands\Request\" />
+    <Folder Include="CQRS\Commands\UserCommands\Response\" />
+    <Folder Include="CQRS\Commands\GenreCommands\Request\" />
+    <Folder Include="CQRS\Commands\GenreCommands\Response\" />
+    <Folder Include="CQRS\Commands\AuthorCommands\Request\" />
+    <Folder Include="CQRS\Commands\AuthorCommands\Response\" />
+    <Folder Include="CQRS\Handlers\AuthorHandlers\CommandHandlers\" />
+    <Folder Include="CQRS\Handlers\AuthorHandlers\QueryHandlers\" />
+    <Folder Include="CQRS\Handlers\BookCopyHandlers\CommandHandlers\" />
+    <Folder Include="CQRS\Handlers\BookCopyHandlers\QueryHandlers\" />
+    <Folder Include="CQRS\Handlers\BookEditionHandlers\CommandHandlers\" />
+    <Folder Include="CQRS\Handlers\BookEditionHandlers\QueryHandlers\" />
+    <Folder Include="CQRS\Handlers\BookFormatHandlers\CommandHandlers\" />
+    <Folder Include="CQRS\Handlers\BookFormatHandlers\QueryHandlers\" />
+    <Folder Include="CQRS\Handlers\GenreHandlers\CommandHandlers\" />
+    <Folder Include="CQRS\Handlers\GenreHandlers\QueryHandlers\" />
+    <Folder Include="CQRS\Handlers\LateReturnHandlers\CommandHandlers\" />
+    <Folder Include="CQRS\Handlers\LateReturnHandlers\QueryHandlers\" />
+    <Folder Include="CQRS\Handlers\PublisherHandlers\CommandHandlers\" />
+    <Folder Include="CQRS\Handlers\PublisherHandlers\QueryHandlers\" />
+    <Folder Include="CQRS\Handlers\ReservationStatusHandlers\CommandHandlers\" />
+    <Folder Include="CQRS\Handlers\ReservationStatusHandlers\QueryHandlers\" />
+    <Folder Include="CQRS\Handlers\ReservationHandlers\CommandHandlers\" />
+    <Folder Include="CQRS\Handlers\ReservationHandlers\QueryHandlers\" />
+    <Folder Include="CQRS\Handlers\UserHandlers\CommandHandlers\" />
+    <Folder Include="CQRS\Handlers\UserHandlers\QueryHandlers\" />
+    <Folder Include="CQRS\Queries\AuthorQueries\Request\" />
+    <Folder Include="CQRS\Queries\AuthorQueries\Response\" />
+    <Folder Include="CQRS\Queries\BookCopyQueries\Request\" />
+    <Folder Include="CQRS\Queries\BookCopyQueries\Response\" />
+    <Folder Include="CQRS\Queries\BookEditionQueries\Request\" />
+    <Folder Include="CQRS\Queries\BookEditionQueries\Response\" />
+    <Folder Include="CQRS\Queries\BookFormatQueries\Request\" />
+    <Folder Include="CQRS\Queries\BookFormatQueries\Response\" />
+    <Folder Include="CQRS\Queries\GenreQueries\Request\" />
+    <Folder Include="CQRS\Queries\GenreQueries\Response\" />
+    <Folder Include="CQRS\Queries\LateReturnQueries\Request\" />
+    <Folder Include="CQRS\Queries\LateReturnQueries\Response\" />
+    <Folder Include="CQRS\Queries\PublisherQueries\Request\" />
+    <Folder Include="CQRS\Queries\PublisherQueries\Response\" />
+    <Folder Include="CQRS\Queries\ReservationStatusQueries\Request\" />
+    <Folder Include="CQRS\Queries\ReservationStatusQueries\Response\" />
+    <Folder Include="CQRS\Queries\ReservationQueries\Request\" />
+    <Folder Include="CQRS\Queries\ReservationQueries\Response\" />
+    <Folder Include="CQRS\Queries\UserQueries\Request\" />
+    <Folder Include="CQRS\Queries\UserQueries\Response\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+</Project>
