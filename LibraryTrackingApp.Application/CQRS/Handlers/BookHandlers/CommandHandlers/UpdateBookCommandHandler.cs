@@ -4,7 +4,7 @@ using LibraryTrackingApp.Application.CQRS.Commands.BookCommands.Request;
 using LibraryTrackingApp.Application.Repository;
 using MediatR;
 
-namespace LibraryTrackingApp.Application.CQRS.Handlers.Book.CommandHandlers
+namespace LibraryTrackingApp.Application.CQRS.Handlers.BookHandlers.CommandHandlers
 {
     public class UpdateBookCommandHandler : IRequestHandler<UpdateBookCommandRequest, UpdateBookCommandResponse>
     {
